@@ -170,7 +170,7 @@
         <onright condition="!Skin.HasSetting(HomeIcons) + !Skin.HasSetting(HomeTextAutoWidth) + !Control.IsVisible(9999)">301</onright>
     </include>
 
-    <include name="Home_Simple">        
+    <include name="Home_Simple">
         <!-- Global Widget -->
         <include>skinshortcuts-template-global</include>
 
@@ -336,7 +336,7 @@
                         <param name="animation" value="Animation_Common_Home" />
                     </include>
                     <animation effect="fade" condition="![Control.HasFocus(5610) | Control.HasFocus(302)]" time="350" tween="cubic" easing="inout" start="100" end="0">Conditional</animation>
-                
+
                     <include content="Home_Hub_Widget">
                         <param name="widget" value="true" />
                         <param name="widgetvisibility" value="String.IsEqual(Window(Home).Property(WidgetFocus),5610)" />
@@ -472,7 +472,7 @@
                                 <top>item_list_height</top>
                                 <width>257.14</width>
                                 <onright>3000</onright>
-                                <orientation>vertical</orientation>                
+                                <orientation>vertical</orientation>
                                 <itemlayout width="257.14" height="item_list_height">
                                     <control type="label">
                                         <right>40</right>
@@ -515,7 +515,7 @@
                             <onright condition="String.IsEqual(Container(9989).ListItem.Property(list),Settings)">5000</onright>
                             <onright condition="String.IsEqual(Container(9989).ListItem.Property(list),Weather)">6000</onright>
                             <width>257.14</width>
-                            <orientation>vertical</orientation>                
+                            <orientation>vertical</orientation>
                             <itemlayout width="257.14" height="item_list_height" condition="!Skin.HasSetting(HomeIcons)">
                                 <control type="label">
                                     <right>40</right>
@@ -576,7 +576,7 @@
                             <content><include>skinshortcuts-mainmenu</include></content>
                         </control>
                     </control>
-                    
+
                     <control type="group" id="99300">
                         <height>view_height</height>
                         <width>1800</width>
@@ -611,7 +611,7 @@
                                 <include content="View_52_Showcase_Aura_Info">
                                     <param name="font" value="font_title" />
                                     <param name="plotheight" value="160" />
-                                    <param name="titleheight" value="60" />
+                                    <param name="titleheight" value="85" />
                                 </include>
                             </control>
                             <control type="group">
@@ -627,7 +627,7 @@
                                 <include content="Home_Vertical_Info">
                                     <param name="font" value="font_title" />
                                     <param name="plotheight" value="160" />
-                                    <param name="titleheight" value="60" />
+                                    <param name="titleheight" value="85" />
                                     <param name="id" value="993100" />
                                     <param name="uid" value="993" />
                                 </include>
@@ -981,7 +981,7 @@
                         <include content="View_52_Showcase_Aura_Info">
                             <param name="font" value="font_title" />
                             <param name="plotheight" value="160" />
-                            <param name="titleheight" value="60" />
+                            <param name="titleheight" value="85" />
                         </include>
                     </control>
                     <control type="group">
@@ -995,7 +995,7 @@
                         <include content="Home_Vertical_Info">
                             <param name="font" value="font_title" />
                             <param name="plotheight" value="160" />
-                            <param name="titleheight" value="60" />
+                            <param name="titleheight" value="85" />
                             <param name="id" value="993100" />
                             <param name="uid" value="993" />
                         </include>
